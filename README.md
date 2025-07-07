@@ -133,4 +133,8 @@ A **machine learning-powered salary prediction system** that accurately forecast
 ![Screenshot 2025-07-07 114304](https://github.com/user-attachments/assets/6bcda5c4-af9c-440c-ad28-5661b93f4b23)
 ![Screenshot 2025-07-07 114428](https://github.com/user-attachments/assets/cc5b1c70-8a78-489c-8585-5489f299dd8d)
 
-# 
+# Airflow
+
+![image](https://github.com/user-attachments/assets/ff7e328f-381e-4696-ba33-a3a0883ca1ed)
+![image](https://github.com/user-attachments/assets/112ab824-90bc-4fde-9486-8ea7b8f9978f)
+
