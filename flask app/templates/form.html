@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salary Prediction</title>
+    <style>
+        body { font-family: Arial; background-color: #f2f2f2; padding: 30px; }
+        .container { background: white; padding: 25px; border-radius: 10px; width: 400px; margin: auto; }
+        input, select { width: 100%; padding: 8px; margin: 10px 0; }
+        button { width: 100%; background: #28a745; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+        h2 { text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Salary Predictor</h2>
+        <form method="post">
+            <label>Job Title:</label>
+            <input type="text" name="job_title" required>
+
+            <label>Experience Level:</label>
+            <select name="experience_level" required>
+                <option value="Junior">Junior</option>
+                <option value="Mid">Mid</option>
+                <option value="Senior">Senior</option>
+                <option value="Lead">Lead</option>
+            </select>
+
+            <label>Employment Type:</label>
+            <select name="employment_type" required>
+                <option value="Full-time">Full-time</option>
+                <option value="Part-time">Part-time</option>
+                <option value="Contract">Contract</option>
+                <option value="Intern">Intern</option>
+            </select>
+
+            <label>Company Size:</label>
+            <select name="company_size" required>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+
+            <label>Remote Ratio (0 to 100):</label>
+            <input type="number" name="remote_ratio" min="0" max="100" required>
+
+            <label>Years of Experience:</label>
+            <input type="number" name="years_experience" step="0.1" required>
+
+            <label>Base Salary (USD):</label>
+            <input type="number" name="base_salary" required>
+
+            <label>Bonus (USD):</label>
+            <input type="number" name="bonus" required>
+
+            <label>Stock Options (USD):</label>
+            <input type="number" name="stock_options" required>
+
+            <button type="submit">Predict Salary</button>
+        </form>
+
+        {% if prediction %}
+            <div style="margin-top:20px; text-align:center;">
+                <h3>Predicted Salary:</h3>
+                <p style="font-size: 24px;">{{ prediction }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
